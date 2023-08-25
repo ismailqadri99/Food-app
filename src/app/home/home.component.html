@@ -1,0 +1,22 @@
+<app-header></app-header>
+<!-- <app-search></app-search> -->
+<body>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div>
+  Welcome to Noida Cafe's
+</div>
+<div class="dropdown">
+  <button type="button" class="dropbtn">
+    {{"Select Cafe" | uppercase}}
+    </button> 
+  <div class="dropdown-content">
+  <button class="but-1" (click)="selectCafe('Cafe-1')">Cafe-1</button><br>
+      <button class="but-2" ngbDropdownItem (click)="selectCafe('Cafe-2')">Cafe-2</button><br>
+      <button class="but-3" (click)="selectCafe('Cafe-3')">Cafe-3</button>
+  </div>
+</div>
+</body>
+  
+
+

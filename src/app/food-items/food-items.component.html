@@ -1,0 +1,18 @@
+<div class="full">
+<ul>
+    <img [src]="food.imageUrl" alt="food images">
+    <br><br>
+    <div class="details">
+      <div class="content">
+      <span class="name">
+        {{food.name}}
+      </span>
+      </div>
+      <div class="price">
+        <span>₹{{food.price}}</span>
+      </div>
+      <button (click)="addToCartN()">Add To Cart</button>
+    </div>
+</ul>
+</div>
+

@@ -1,0 +1,27 @@
+<body>
+    
+  <div class="card">
+      <div class="site">
+          <h1>Login Yourself</h1>
+      </div>
+      <!-- <h2>Login</h2> -->
+      <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" [(ngModel)]="username" name="username" required>
+                    
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" [(ngModel)]="password" name="password" required>
+        </div>
+        <div class="form-group but">
+          <button type="submit" [disabled]="loginForm.invalid">Login</button>
+        </div>
+      </form>
+      <div *ngIf="loginForm.submitted && loginForm.invalid" class="error-message">Please fill in all fields.</div>
+      <div class="register-link">
+        Don't have an account? <a routerLink="/register">Register</a>
+      </div>
+    </div>
+  </body>

@@ -1,0 +1,19 @@
+<div class="full">
+<ul>
+  <!-- <ng-container *ngIf="location === 'BANGALORE'"> -->
+  <img [src]="item.imageUrl" alt="items images">
+  <br><br><br>
+    <div class="details">
+      <div class="content">
+    <span class="name">
+      {{item.name}}
+    </span>
+    </div>
+    <div class="price">
+      <span>₹{{item.price}}</span>
+    </div>
+    <button (click)="addToCartB()">Add To Cart</button>
+  </div>
+  <!-- </ng-container> -->
+</ul>
+</div>
